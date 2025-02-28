@@ -1,57 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="mark-to-grade.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="mark-to-grade.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <script src="script.js" defer></script>
 
     <title>Assignment 1 - Mark to Grade</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="logo">
-            <a href="https://www.instagram.com/noellorenceg">@noellorenceg</a>
-        </div>
-        <ul class="navigations">
-            <li class="hideOnMobile"><a  href="index.html">HOME</a></li>
-            <li class="hideOnMobile"><a class="home-btn" href="HTML.html">MARK YOUR GRADE</a></li>
-            <li class="hideOnMobile"><a href="cascading.html">STAFF INFORMATION</a></li>
-            <li class="hideOnMobile"><a href="javascript.html">TEMPERATURE CONVERTER</a></li>
-        </ul>
-        <button id="navButton" onclick="openSideBar()">
-            <i class="bx bx-menu"></i>
-        </button>
+      <div class="logo">
+        <a href="https://www.instagram.com/noellorenceg">@noellorenceg</a>
+      </div>
+      <ul class="navigations">
+        <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+        <li class="hideOnMobile">
+          <a class="home-btn" href="mark-to-grade.html">MARK YOUR GRADE</a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="staff-info.html">STAFF INFORMATION</a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="temperature-converter.html">TEMPERATURE CONVERTER</a>
+        </li>
+      </ul>
+      <button id="navButton" onclick="openSideBar()">
+        <i class="bx bx-menu"></i>
+      </button>
     </nav>
 
     <div class="sidebar">
-        <div onclick="hideSideBar()" class="xBtn">
-            <i class="bx bx-x"></i>
-        </div>
-        <ul class="navigations">
-            <li><a href="index.html">HOME</a></li>
-            <li><a class="HTML-btn" href="HTML.html">MARK YOUR GRADE</a></li>
-            <li><a href="cascading.html">STAFF INFORMATION</a></li>
-            <li><a href="javascript.html">TEMPERATURE CONVERTER</a></li>
-        </ul>
+      <div onclick="hideSideBar()" class="xBtn">
+        <i class="bx bx-x"></i>
+      </div>
+      <ul class="navigations">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="mark-to-grade.html">MARK YOUR GRADE</a></li>
+        <li><a href="staff-info.html">STAFF INFORMATION</a></li>
+        <li><a href="temperature-converter.html">TEMPERATURE CONVERTER</a></li>
+      </ul>
     </div>
 
     <main class="grade-container">
-        <h2>Convert Your Mark to a Grade</h2>
-        <p>Enter your mark (0-100) below to see the corresponding letter grade.</p>
-        <input type="text" id="markInput" placeholder="Enter your mark...">
-        <button id="submitButton" onclick="calculateGrade()">Submit</button>
-        <p id="resultMessage"></p>
+      <h2>Convert Your Mark to a Grade</h2>
+      <p>
+        Enter your mark (0-100) below to see the corresponding letter grade.
+      </p>
+      <input type="text" id="markInput" placeholder="Enter your mark..." />
+      <button id="submitButton" onclick="calculateGrade()">Submit</button>
+      <p id="resultMessage"></p>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> Noel Gonzales. All Rights Reserved.</p>
-        <p id="timestamp"></p>
+      <p>&copy; <span id="year"></span> Noel Gonzales. All Rights Reserved.</p>
+      <p id="timestamp"></p>
     </footer>
-
-</body>
+  </body>
 </html>

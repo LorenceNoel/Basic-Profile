@@ -1,417 +1,407 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
 }
 
 :root {
-    --mistyBlue: #2f5061;
-    --tealGreen: #4297a0;
-    --ivory: #f4eae6;
-    --coral: #e57f84;
+  --mistyBlue: #2f5061;
+  --tealGreen: #4297a0;
+  --ivory: #f4eae6;
+  --coral: #e57f84;
 }
 
 main {
-    background-color: var(--mistyBlue);
-    position: relative;
-    z-index: 2;
+  background-color: var(--mistyBlue);
+  position: relative;
+  z-index: 2;
 }
 
 #banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.8),#2f5061);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    padding-top: 80px;
-    position: relative;
-    background-attachment: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), #2f5061);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 80px;
+  position: relative;
+  background-attachment: fixed;
 }
 
-
 #banner:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 nav {
-    backdrop-filter: blur(5px);
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: var(--tealGreen);
-    box-shadow: 1px 1px 2px 1px var(--tealGreen);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: var(--tealGreen);
+  box-shadow: 1px 1px 2px 1px var(--tealGreen);
 }
 
 .sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    background-color: var(--tealGreen);
-    box-shadow: 3px 3px 5px 3px var(--tealGreen);;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    line-height: 40px;
-    padding-left: 10px;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: var(--tealGreen);
+  box-shadow: 3px 3px 5px 3px var(--tealGreen);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  line-height: 40px;
+  padding-left: 10px;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .navbar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    transition: top 0.3s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: top 0.3s;
 }
 
 .navbar.sticky {
-    top: -80px;
+  top: -80px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .logo {
-    font-size: 18px;
-    font-weight: 600;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .logo a {
-    color: var(--ivory);
+  color: var(--ivory);
 }
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .sidebar ul {
-    list-style: none;
+  list-style: none;
 }
 
 .sidebar ul li a {
-    color: var(--ivory);
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
+  color: var(--ivory);
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
 }
 
 .sidebar a:hover {
-    color: var(--coral);
-    background-color: var(--coral);
-    width: 100%;
-    width: 100%;
+  color: var(--coral);
+  background-color: var(--coral);
+  width: 100%;
+  width: 100%;
 }
 
 nav ul li a {
-    position: relative;
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0 10px;
-    color: var(--ivory);
-    position: relative;
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 10px;
+  color: var(--ivory);
+  position: relative;
 }
 
 nav button {
-    color: var(--ivory);
-    background-color: transparent;
-    padding: 12px 16px;
-    border-radius: 5px;
-    border: 1px solid var(--ivory);
-    cursor: pointer;
-    transition: all 0.3s ease;
+  color: var(--ivory);
+  background-color: transparent;
+  padding: 12px 16px;
+  border-radius: 5px;
+  border: 1px solid var(--ivory);
+  cursor: pointer;
+  transition: all 0.3s ease;
 
-    justify-content: center;
-    font-size: 30px;
-    padding: 7px;
+  justify-content: center;
+  font-size: 30px;
+  padding: 7px;
 }
 
 #navButton {
-    display: none;
+  display: none;
 }
 
 .xBtn {
-    color: var(--ivory);
-    background-color: transparent;
-    padding: 12px 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  color: var(--ivory);
+  background-color: transparent;
+  padding: 12px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    padding: 7px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  padding: 7px;
 }
 
 .xBtn:hover {
-    color: var(--coral);
+  color: var(--coral);
 }
 
 nav button:hover {
-    background-color: var(--coral);
-    border-color: var(--ivory);
-    color: var(--ivory);
+  background-color: var(--coral);
+  border-color: var(--ivory);
+  color: var(--ivory);
 }
 
 .navigations a::after {
-    content: '';
-    position: absolute;
-    background-color: var(--coral);
-    height: 4px;
-    width: 0%;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s;
+  content: "";
+  position: absolute;
+  background-color: var(--coral);
+  height: 4px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
 }
 
 .blur {
-    position: relative;
-    box-shadow: 0 0 80px 20px var(--tealGreen);
-    z-index: 100;
+  position: relative;
+  box-shadow: 0 0 80px 20px var(--tealGreen);
+  z-index: 100;
 }
 
 a:focus {
-    outline: 2px dashed var(--coral);
+  outline: 2px dashed var(--coral);
 }
 
-
 .navigations a:hover {
-    color: var(--coral);
+  color: var(--coral);
 }
 
 .navigations a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 nav .home-btn {
-    background-color: var(--mistyBlue);
-    font-weight: 500;
-    padding: 12px;
-    border: 1px solid transparent;
-    border-radius: 5px;
+  background-color: var(--mistyBlue);
+  font-weight: 500;
+  padding: 12px;
+  border: 1px solid transparent;
+  border-radius: 5px;
 }
 
 .bannerContent {
-    color: var(--ivory);
-    height: 80%;
-    width: 80%;
-    margin: auto;
-    display: flex; /* Use flexbox for even spacing */
-    align-items: center; /* Center vertically */
-    justify-content: space-between; /* Space elements evenly */
-    padding: 50px;
-    text-align: center;
-    flex-wrap: wrap;
-
+  color: var(--ivory);
+  height: 80%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .bannerContent h2 {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .bannerContent p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .content1 {
-    flex:1;
-    min-width: 300px;
+  flex: 1;
+  min-width: 300px;
 }
 
 .content2 {
-    width: 300px;
-    height: 300px;
-    background-image: url(/IMG_4636.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%; /* Keeps the circular shape */
-    border: 5px solid var(--coral); /* Adds a border */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Adds a soft shadow */
-    transition: transform 0.3s ease-in-out;
-
+  width: 300px;
+  height: 300px;
+  background-image: url(Profile\ Picture.jpg);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: 5px solid var(--coral);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
 }
 
 #profile-pic {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .SD {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.5px var(--coral);
-    font-size: 30px;
-    font-weight: 500;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px var(--coral);
+  font-size: 30px;
+  font-weight: 500;
 }
 
 .NG {
-    font-size: 70px;
-    color: var(--coral);
+  font-size: 70px;
+  color: var(--coral);
 }
 
 .blur-background {
-    filter: blur(5px);
+  filter: blur(5px);
 }
 
 .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 #about-me {
-    background-color: var(--ivory);
-    padding: 50px 20px;
-    text-align: center;
+  background-color: var(--ivory);
+  padding: 50px 20px;
+  text-align: center;
 }
 
 .about-container {
-    max-width: 800px;
-    margin: 0 auto;
-    color: var(--mistyBlue);
-    line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--mistyBlue);
+  line-height: 1.8;
 }
 
 .about-container h2 {
-    font-size: 36px;
-    color: var(--coral);
-    margin-bottom: 20px;
+  font-size: 36px;
+  color: var(--coral);
+  margin-bottom: 20px;
 }
 
 .about-container p {
-    font-size: 18px;
-    margin-bottom: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 footer {
-    background-color: var(--mistyBlue);
-    color: var(--ivory);
-    text-align: center;
-    padding: 15px;
-    font-size: 14px;
+  background-color: var(--mistyBlue);
+  color: var(--ivory);
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
 }
 
 footer p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 @media only screen and (max-width: 800px) {
-    .hideOnMobile {
-        display: none;
-    }
+  .hideOnMobile {
+    display: none;
+  }
 
-    #navButton {
-        display: block;
-    }
+  #navButton {
+    display: block;
+  }
 
-    .bannerContent {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .bannerContent {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-    .sidebar {
-        width: 100%;
-    }
+  .sidebar {
+    width: 100%;
+  }
 
-    .bannerContent {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .bannerContent {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
-/* Slide-in Effects */
 @keyframes slideInFromLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
 
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes slideInFromBottom {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
 
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 800px) {
-
-
-    .content2 {
-        margin-top: 20px; /* Add spacing between text and image */
-    }
+  .content2 {
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-    .bannerContent {
-        padding: 20px;
-    }
+  .bannerContent {
+    padding: 20px;
+  }
 
-    .content1 h2 {
-        font-size: 36px; /* Adjust heading size for mobile */
-    }
+  .content1 h2 {
+    font-size: 36px;
+  }
 
-    .content1 p {
-        font-size: 18px;
-    }
+  .content1 p {
+    font-size: 18px;
+  }
 
-    .content2 {
-        width: 250px;
-        height: 250px;
-    }
+  .content2 {
+    width: 250px;
+    height: 250px;
+  }
 }
-
+    
 #banner,
-main{
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
+main {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
 }
-
-
-
