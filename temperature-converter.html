@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="temperature.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+
+    <title>Assignment 1 - Mark to Grade</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="https://www.instagram.com/noellorenceg">@noellorenceg</a>
+        </div>
+        <ul class="navigations">
+            <li class="hideOnMobile"><a  href="index.html">HOME</a></li>
+            <li class="hideOnMobile"><a  href="HTML.html">MARK YOUR GRADE</a></li>
+            <li class="hideOnMobile"><a href="cascading.html">STAFF INFORMATION</a></li>
+            <li class="hideOnMobile"><a class="home-btn" href="javascript.html">TEMPERATURE CONVERTER</a></li>
+        </ul>
+        <button id="navButton" onclick="openSideBar()">
+            <i class="bx bx-menu"></i>
+        </button>
+    </nav>
+
+    <div class="sidebar">
+        <div onclick="hideSideBar()" class="xBtn">
+            <i class="bx bx-x"></i>
+        </div>
+        <ul class="navigations">
+            <li><a href="index.html">HOME</a></li>
+            <li><a class="HTML-btn" href="HTML.html">MARK YOUR GRADE</a></li>
+            <li><a href="cascading.html">STAFF INFORMATION</a></li>
+            <li><a href="javascript.html">TEMPERATURE CONVERTER</a></li>
+        </ul>
+    </div>
+
+    <main class="temperature-container">
+        <h2>Temperature Converter</h2>
+        <p>Enter a temperature in degrees Fahrenheit.</p>
+        <input type="text" id="fahrenheit" placeholder="Enter a degree in Fahrenheit...">
+        <button id="submitButton" onclick="convertTemperature()">Submit</button>
+        <p id="convertedTempC"></p>
+        <p id="convertedTempK"></p>
+    </main>
+    
+
+    <footer>
+        <p>&copy; <span id="year"></span> Noel Gonzales. All Rights Reserved.</p>
+        <p id="timestamp"></p>
+    </footer>
+
+</body>
+</html>
