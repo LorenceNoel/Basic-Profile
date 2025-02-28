@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+    <title>Assignment 1 - HomePage</title>
+</head>
+<body>
+
+    <section id="banner">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="https://www.instagram.com/noellorenceg">@noellorenceg</a>
+            </div>
+            <ul class="navigations">
+                <li class="hideOnMobile"><a class="home-btn" href="index.html">HOME</a></li>
+                <li class="hideOnMobile"><a href="HTML.html">MARK YOUR GRADE</a></li>
+                <li class="hideOnMobile"><a href="cascading.html">STAFF INFORMATION</a></li>
+                <li class="hideOnMobile"><a href="javascript.html">TEMPERATURE CONVERTER</a></li>
+            </ul>
+            <button id="navButton" onclick="openSideBar()">
+                <i class="bx bx-menu"></i>
+            </button>
+        </nav>
+
+        <div class="sidebar">
+            <div onclick="hideSideBar()" class="xBtn">
+                <i class="bx bx-x"></i>
+            </div>
+            <ul class="navigations">
+                <li><a href="index.html">HOME</a></li>
+                <li><a class="HTML-btn" href="HTML.html">MARK YOUR GRADE</a></li>
+                <li><a href="cascading.html">STAFF INFORMATION</a></li>
+                <li><a href="javascript.html">TEMPERATURE CONVERTER</a></li>
+            </ul>
+        </div>
+
+        <div class="bannerContent">
+            <div class="content1">
+                <h2>Hi! I'm <span class="NG">Noel Gonzales</span></h2>
+                <p>
+                    From a Sales Professional to
+                    <span class="SD">Software Developer</span><br>
+                </p>
+            </div>
+            <div class="content2" id="profile-pic"></div>
+        </div>
+    </section>
+
+    <section id="about-me">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>
+                My journey in technology started with a deep passion for problem-solving and continuous learning. Transitioning from sales to software development was challenging but rewarding. I enjoy coding, designing, and working on projects that push innovation forward.
+            </p>
+            <p>
+                Outside of coding, I love exploring new technologies, reading about advancements in AI, and working on personal projects. Collaboration and creativity are key aspects of my work, and I am always excited to tackle new challenges.
+            </p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <p>&copy; <span id="year"></span> Noel Gonzales. All Rights Reserved.</p>
+            <p id="timestamp"></p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+</body>
+</html>
